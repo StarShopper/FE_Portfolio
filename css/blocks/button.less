@@ -3,8 +3,8 @@
 .btn{
     display: inline-block;
     vertical-align: top;
-    padding:1.1rem 1.8rem;
-    min-width: 170px; 
+    padding: 1.04em 1.7em;
+    min-width: 170px;
 
     border:1px solid @gray;
     border-radius: 30px;
@@ -18,7 +18,7 @@
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    
+
     transition: background-color .2s linear, color .2s linear, box-shadow .2s linear;
 
     &:focus{
@@ -34,4 +34,14 @@
     + .btn {
         margin-left: 1rem;
     }
+
+
+// Mods
+
+    &--sm{
+        padding: .5em 1em;
+        font-size: .93rem;
+        font-weight: 700;
+    }
+
 }
