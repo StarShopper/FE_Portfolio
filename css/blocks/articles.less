@@ -1,0 +1,35 @@
+// main: ../style.less
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+.articles__col{
+    width: 33.3333%;
+    padding: 0 1rem;
+}
+
+.articles__header{
+    position:relative;
+}
+
+.articles__data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 77px;
+    height: 77px;
+
+    background-color: @black;
+    color: @white;
+    text-align: center;
+    font-size: 1.06rem;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
