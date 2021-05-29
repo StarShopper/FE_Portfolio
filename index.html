@@ -370,11 +370,11 @@
 	</footer>
 
 							<!--Modals-->
-	<div class="modal">
+	<div class="modal" style="display: none;">
 		<div class="modal__dialog">
 
 			<button class="modal__close" type="button">
-				<img src="images/modal-close.svg" alt="Close">
+			<a href=""><i class="fas fa-times"></i></a>
 			</button>
 
 			<div class="modal-work">
@@ -397,15 +397,15 @@
 
 					<div class="modal-work__text">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio accusantium? Sunt sed praesentium est minima.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio accusantium? Sunt sed praesentium est minima.</p>
+						
 					</div>
 
 					<div class="modal-work__footer">
-						<button class="modal-work__btn" type="button">
+						<button class="modal-work__btn  modal-work__btn--prev" type="button">
 							<img src="images/back.svg" height="11" alt="">
 							Previous
 						</button>
-						<button class="modal-work__btn" type="button">
+						<button class="modal-work__btn  modal-work__btn--next" type="button">
 							Next
 							<img src="images/next.svg" height="11" alt="">
 						</button>
@@ -416,6 +416,37 @@
 
 		</div><!-- /.modal__dialog -->
 	</div><!-- /.modal -->
+
+	<div class="modal" >
+		<div class="modal__dialog">
+
+			<button class="modal__close" type="button">
+			<a href=""><i class="fas fa-times"></i></a>
+			</button>
+
+			<div class="modal__content">
+				<h3 class="modal__title">Resume</h3>
+
+					<div class="text-center">
+						<a class="btn btn--thin" href="#">Download PDF</a>
+						<a class="btn btn--thin" href="#">Print</a>
+					</div>
+
+					<div class="timeline">
+						<div class="timeline__col">
+							<h4 class="timeline__title text__right">EXPERIECE</h4>
+						</div>
+						<div class="timeline__col">
+							<h4 class="timeline__title ">Education</h4>
+						</div>
+						
+					</div>
+
+
+			</div>
+			
+		</div><!-- /.modal__dialog -->
+	</div><!-- /.modal -->
 </body>
 
-</html>
+</html>modal__title
