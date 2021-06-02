@@ -1,20 +1,87 @@
 // main : ../style.less
 
-.timeline{
+.timeline {
     display: flex;
     margin: 4.2rem auto;
     width: 100%;
     max-width: 768px;
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+
+        background-color: @black;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+    }
 
 }
 
-.timeline__col{
+.timeline__col {
     width: 50%;
+
+    &--left {
+        text-align: right;
+        padding-right: 3.2rem;
+    }
+
+    &--right {
+        padding-left: 3.2rem;
+    }
+
+
 }
 
-.timeline__title{
+.timeline__title {
+    margin-bottom: 2.6rem;
     font-size: 1.2rem;
     color: @black;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+.timeline__item{
+    margin-bottom: 1.4rem;
+
+    &:last-child{
+    margin-bottom: 0;
+    }
+}
+
+
+
+
+.timeline__date{
+    display: block;
+    text-decoration: underline;
+    margin-bottom: 0.9rem;
+
+    font-size: 0.94rem;
+    color: @black;
+}
+
+.timeline__subtitle{
+    font-size: 1.06rem;
+    color: @black;
+    font-weight: 700;
+    margin-bottom: .2rem;
+}
+
+.timeline__position{
+    font-size: 0.94rem;
+    font-style: italic;
+    color: @black;
+    margin-bottom: .3rem;
+}
+
+.timeline__text{
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: @gray;
+    line-height: 1.8;
 }
