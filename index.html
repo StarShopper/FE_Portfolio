@@ -16,7 +16,7 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
-<body class="no-scroll">
+<body>
 	<!-- Header -->
 
 	<header class="header">
@@ -36,7 +36,7 @@
 					<a class="nav__link" href="#">About me</a>
 					<a class="nav__link" href="#">Blog</a>
 					<a class="nav__link" href="#">Contact</a>
-					<a class="nav__link nav__link--btn" href="#">Hire me</a>
+					<a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">Hire me</a>
 				</div>
 			</div>
 		</div>
@@ -54,26 +54,26 @@
 
 					<div class="social">
 						<a class="social__link" href="#">
-							<img src="images/behance.svg" alt="">
+							<i class="fab fa-behance"></i>
 						</a>
 						<a class="social__link" href="#">
-							<img src="images/dribbble.svg" alt="">
+							<i class="fab fa-dribbble"></i>
 						</a>
 						<a class="social__link" href="#">
-							<img src="images/facebook.svg" alt="">
+							<i class="fab fa-facebook"></i>
 						</a>
 						<a class="social__link" href="#">
-							<img src="images/in.svg" alt="">
+							<i class="fab fa-linkedin"></i>
 						</a>
 						<a class="social__link" href="#">
-							<img src="images/instagram.svg" alt="">
+							<i class="fab fa-instagram"></i>
 						</a>
 						<a class="social__link" href="#">
-							<img src="images/twitter.svg" alt="">
+							<i class="fab fa-twitter"></i>
 						</a>
 					</div>
-					<a class="btn" href="#">Hire Me</a>
-					<button class="btn" type="button">SEE MY RESUME</button>
+					<a class="btn" href="#" data-modal="#modal_hire_me">Hire Me</a>
+					<button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
 				</div>
 
 				<img class="intro__photo" src="images/photo.png" alt="">
@@ -98,7 +98,7 @@
 
 			<div class="portfolio" id=>
 				<div class="portfolio__col" data-cat="app">
-					<div class="work">
+					<div class="work" data-modal="#modal_project_1">
 						<img class="work__image" src="http://placehold.it/370X250" alt="">
 						<div class="work__content">
 							<div class="work__cat">category: app</div>
@@ -111,7 +111,7 @@
 				</div>
 
 				<div class="portfolio__col" data-cat="websites">
-					<div class="work">
+					<div class="work" data-modal="#modal_project_2">
 						<img class="work__image" src="http://placehold.it/370X250" alt="">
 						<div class="work__content">
 							<div class="work__cat">category: websites</div>
@@ -136,7 +136,7 @@
 					</div>
 				</div>
 
-				<div class="portfolio__col" data-cat="website">
+				<div class="portfolio__col" data-cat="websites">
 					<div class="work">
 						<img class="work__image" src="http://placehold.it/370X250" alt="">
 						<div class="work__content">
@@ -212,8 +212,8 @@
 							nihil laudantium impedit repellendus est dolorem reiciendis
 							maxime voluptas in!</p>
 					</div>
-					<a class="btn" href="#">Hire Me</a>
-					<button class="btn" type="button">SEE MY RESUME</button>
+					<a class="btn" href="#" data-modal="#modal_hire_me">Hire Me</a>
+					<button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
 				</div>
 			</div>
 		</div>
@@ -376,7 +376,7 @@
 					<a class="footer__nav-link" href="#">About me</a>
 					<a class="footer__nav-link" href="#">Blog</a>
 					<a class="footer__nav-link" href="#">Contact</a>
-					<a class="footer__nav-link  footer__nav-link--btn" href="#">Hire me</a>
+					<a class="footer__nav-link  footer__nav-link--btn" href="#" data-modal="#modal_hire_me">Hire me</a>
 				</nav>
 			</div>
 			<!--Footer__inner -->
@@ -385,11 +385,12 @@
 		<!--Container -->
 	</footer>
 
-	<!--Modals-->
-	<div class="modal" id="modal_project_1" style="display: none;">
+							<!--Modals-->
+
+	<div class="modal" id="modal_project_1" >
 		<div class="modal__dialog">
 
-			<button class="modal__close" type="button">
+			<button class="modal__close" type="button" data-close>
 				<a href=""><i class="fas fa-times"></i></a>
 			</button>
 
@@ -436,10 +437,60 @@
 		</div><!-- /.modal__dialog -->
 	</div><!-- /.modal -->
 
-	<div class="modal" id="modal_resume" style="display: none;">
+	<div class="modal" id="modal_project_2" >
 		<div class="modal__dialog">
 
-			<button class="modal__close" type="button">
+			<button class="modal__close" type="button" data-close>
+				<a href=""><i class="fas fa-times"></i></a>
+			</button>
+
+			<div class="modal-work">
+				<div class="modal-work__preview">
+					<img class="modal-work__photo" src="http://placehold.it/790x780" alt="">
+				</div>
+				<div class="modal-work__content">
+
+					<div class="modal-work__header">
+						<h3 class="modal-work__title">Project title</h3>
+						<div class="modal-work__info">
+							category <span class="modal-work__info-divider">|</span> 2018
+						</div>
+					</div>
+
+					<div class="modal-work__client">
+						<div class="modal-work__client-title">Client:</div>
+						<div class="modal-work__client-company">Creative Agency</div>
+					</div>
+
+					<div class="modal-work__text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae
+							debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio
+							accusantium? Sunt sed praesentium est minima.</p>
+
+					</div>
+
+					<div class="modal-work__footer">
+						<button class="modal-work__btn  modal-work__btn--prev" type="button">
+							<img src="images/back.svg" height="11" alt="">
+							Previous
+						</button>
+						<button class="modal-work__btn  modal-work__btn--next" type="button">
+							Next
+							<img src="images/next.svg" height="11" alt="">
+						</button>
+					</div>
+
+				</div><!-- /.modal-work__content -->
+			</div>
+			<!--/.modal-work -->
+
+		</div><!-- /.modal__dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal" id="modal_resume" >
+		<div class="modal__dialog">
+
+			<button class="modal__close" type="button" data-close>
 				<a href=""><i class="fas fa-times"></i></a>
 			</button>
 
@@ -607,7 +658,7 @@
 				<!--TIMELINE END-->
 
 				<div class="text-center">
-					<a class="btn" href="#">Hire Me</a>
+					<a class="btn" href="#" data-modal="#modal_hire_me">Hire Me</a>
 				</div>
 
 			</div>
@@ -618,11 +669,10 @@
 	</div>
 	<!--MODAL-->
 
-
-	<div class="modal" >
+	<div class="modal" id="modal_hire_me" >
 		<div class="modal__dialog modal__dialog--sm">
 
-			<button class="modal__close" type="button">
+			<button class="modal__close" type="button" data-close>
 				<a href=""><i class="fas fa-times"></i></a>
 			</button>
 
@@ -668,6 +718,8 @@
 		<!--MODAL__DIALOG END-->
 	</div>
 	<!--MODAL-->
+
+							<!--Modals_End-->
 
 
 
