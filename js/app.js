@@ -1,4 +1,7 @@
 $(function () {
+
+    const worksSlider = $('[data-slider="slick"]');
+
     /* Filter */
     let filter = $('[data-filter]')
 
@@ -44,7 +47,9 @@ $(function () {
             $(modalId).find('.modal__dialog').css({
                 transform: "rotateX(0)"
             })
-        }, 200)
+        }, 200);
+
+        worksSlider.slick('setPosition');
     });
 
 
@@ -69,7 +74,7 @@ $(function () {
         let $this = $(this);
 
         $this.find('.modal__dialog').css({
-            transform: "rotateX(90deg)"
+            transform: "rotateY(90deg)"
         })
 
         setTimeout(function(){
@@ -87,7 +92,34 @@ $(function () {
     });
 
 
+    /* Slider https://kenwheller.github.io/slick/ */
+
+    worksSlider.slick({
+        infinte: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: false,
+        dots: true
+
+    })
+
+    $('.slickPrev').on('click', function(event){
+        event.preventDefault()
+
+        let currentSlider =$(this).parents('.modal').find('[data-slider="slick"]');
+
+        currentSlider.slick('slickPrev')
+    })
+
+    $('.slickNext').on('click', function(event){
+        event.preventDefault()
+
+        let currentSlider =$(this).parents('.modal').find('[data-slider="slick"]');
+
+        currentSlider.slick('slickNext')
+    })
 
 
 
-})
+});

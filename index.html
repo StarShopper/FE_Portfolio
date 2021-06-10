@@ -124,7 +124,7 @@
 				</div>
 
 				<div class="portfolio__col" data-cat="interaction">
-					<div class="work">
+					<div class="work" data-modal="#modal_project_3">
 						<img class="work__image" src="http://placehold.it/370X250" alt="">
 						<div class="work__content">
 							<div class="work__cat">category: interaction</div>
@@ -137,7 +137,7 @@
 				</div>
 
 				<div class="portfolio__col" data-cat="websites">
-					<div class="work">
+					<div class="work"data-modal="#modal_project_4">
 						<img class="work__image" src="http://placehold.it/370X250" alt="">
 						<div class="work__content">
 							<div class="work__cat">category: websites</div>
@@ -150,7 +150,7 @@
 				</div>
 
 				<div class="portfolio__col" data-cat="interaction">
-					<div class="work">
+					<div class="work" data-modal="#modal_project_5">
 						<img class="work__image" src="http://placehold.it/370X250" alt="">
 						<div class="work__content">
 							<div class="work__cat">category: interaction</div>
@@ -163,7 +163,7 @@
 				</div>
 
 				<div class="portfolio__col" data-cat="app">
-					<div class="work">
+					<div class="work" data-modal="#modal_project_6">
 						<img class="work__image" src="http://placehold.it/370X250" alt="">
 						<div class="work__content">
 							<div class="work__cat">category: app</div>
@@ -396,12 +396,19 @@
 
 			<div class="modal-work">
 				<div class="modal-work__preview">
-					<img class="modal-work__photo" src="http://placehold.it/790x780" alt="">
+					<div data-slider="slick">
+						<div>
+							<img class="modal-work__photo" src="http://placehold.it/790x780" alt="">
+						</div>
+						<div>
+							<img class="modal-work__photo" src="http://placehold.it/790x780/333" alt="">
+						</div>
+					</div>
 				</div>
 				<div class="modal-work__content">
 
 					<div class="modal-work__header">
-						<h3 class="modal-work__title">Project title</h3>
+						<h3 class="modal-work__title">Music</h3>
 						<div class="modal-work__info">
 							category <span class="modal-work__info-divider">|</span> 2018
 						</div>
@@ -420,11 +427,11 @@
 					</div>
 
 					<div class="modal-work__footer">
-						<button class="modal-work__btn  modal-work__btn--prev" type="button">
+						<button class="modal-work__btn slickPrev" type="button">
 							<img src="images/back.svg" height="11" alt="">
 							Previous
 						</button>
-						<button class="modal-work__btn  modal-work__btn--next" type="button">
+						<button class="modal-work__btn slickNext" type="button">
 							Next
 							<img src="images/next.svg" height="11" alt="">
 						</button>
@@ -446,12 +453,19 @@
 
 			<div class="modal-work">
 				<div class="modal-work__preview">
-					<img class="modal-work__photo" src="http://placehold.it/790x780" alt="">
+					<div data-slider="slick">
+						<div>
+							<img class="modal-work__photo" src="http://placehold.it/790x780" alt="">
+						</div>
+						<div>
+							<img class="modal-work__photo" src="http://placehold.it/790x780/333" alt="">
+						</div>
+					</div>
 				</div>
 				<div class="modal-work__content">
 
 					<div class="modal-work__header">
-						<h3 class="modal-work__title">Project title</h3>
+						<h3 class="modal-work__title">Art</h3>
 						<div class="modal-work__info">
 							category <span class="modal-work__info-divider">|</span> 2018
 						</div>
@@ -470,11 +484,11 @@
 					</div>
 
 					<div class="modal-work__footer">
-						<button class="modal-work__btn  modal-work__btn--prev" type="button">
+						<button class="modal-work__btn slickPrev" type="button">
 							<img src="images/back.svg" height="11" alt="">
 							Previous
 						</button>
-						<button class="modal-work__btn  modal-work__btn--next" type="button">
+						<button class="modal-work__btn slickNext" type="button">
 							Next
 							<img src="images/next.svg" height="11" alt="">
 						</button>
@@ -486,6 +500,238 @@
 
 		</div><!-- /.modal__dialog -->
 	</div><!-- /.modal -->
+
+	<div class="modal" id="modal_project_3" >
+		<div class="modal__dialog">
+
+			<button class="modal__close" type="button" data-close>
+				<a href=""><i class="fas fa-times"></i></a>
+			</button>
+
+			<div class="modal-work">
+				<div class="modal-work__preview">
+					<div data-slider="slick">
+						<div>
+							<img class="modal-work__photo" src="http://placehold.it/790x780" alt="">
+						</div>
+						<div>
+							<img class="modal-work__photo" src="http://placehold.it/790x780/333" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal-work__content">
+
+					<div class="modal-work__header">
+						<h3 class="modal-work__title">Dance</h3>
+						<div class="modal-work__info">
+							category <span class="modal-work__info-divider">|</span> 2018
+						</div>
+					</div>
+
+					<div class="modal-work__client">
+						<div class="modal-work__client-title">Client:</div>
+						<div class="modal-work__client-company">Creative Agency</div>
+					</div>
+
+					<div class="modal-work__text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae
+							debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio
+							accusantium? Sunt sed praesentium est minima.</p>
+
+					</div>
+
+					<div class="modal-work__footer">
+						<button class="modal-work__btn slickPrev" type="button">
+							<img src="images/back.svg" height="11" alt="">
+							Previous
+						</button>
+						<button class="modal-work__btn slickNext" type="button">
+							Next
+							<img src="images/next.svg" height="11" alt="">
+						</button>
+					</div>
+
+				</div><!-- /.modal-work__content -->
+			</div>
+			<!--/.modal-work -->
+
+		</div><!-- /.modal__dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal" id="modal_project_4" >
+		<div class="modal__dialog">
+
+			<button class="modal__close" type="button" data-close>
+				<a href=""><i class="fas fa-times"></i></a>
+			</button>
+
+			<div class="modal-work">
+				<div class="modal-work__preview">
+					<div data-slider="slick">
+						<div>
+							<img class="modal-work__photo" src="http://placehold.it/790x780" alt="">
+						</div>
+						<div>
+							<img class="modal-work__photo" src="http://placehold.it/790x780/333" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal-work__content">
+
+					<div class="modal-work__header">
+						<h3 class="modal-work__title">Opera</h3>
+						<div class="modal-work__info">
+							category <span class="modal-work__info-divider">|</span> 2018
+						</div>
+					</div>
+
+					<div class="modal-work__client">
+						<div class="modal-work__client-title">Client:</div>
+						<div class="modal-work__client-company">Creative Agency</div>
+					</div>
+
+					<div class="modal-work__text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae
+							debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio
+							accusantium? Sunt sed praesentium est minima.</p>
+
+					</div>
+
+					<div class="modal-work__footer">
+						<button class="modal-work__btn slickPrev" type="button">
+							<img src="images/back.svg" height="11" alt="">
+							Previous
+						</button>
+						<button class="modal-work__btn slickNext" type="button">
+							Next
+							<img src="images/next.svg" height="11" alt="">
+						</button>
+					</div>
+
+				</div><!-- /.modal-work__content -->
+			</div>
+			<!--/.modal-work -->
+
+		</div><!-- /.modal__dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal" id="modal_project_5" >
+		<div class="modal__dialog">
+
+			<button class="modal__close" type="button" data-close>
+				<a href=""><i class="fas fa-times"></i></a>
+			</button>
+
+			<div class="modal-work">
+				<div class="modal-work__preview">
+					<div data-slider="slick">
+						<div>
+							<img class="modal-work__photo" src="http://placehold.it/790x780" alt="">
+						</div>
+						<div>
+							<img class="modal-work__photo" src="http://placehold.it/790x780/333" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal-work__content">
+
+					<div class="modal-work__header">
+						<h3 class="modal-work__title">Movie</h3>
+						<div class="modal-work__info">
+							category <span class="modal-work__info-divider">|</span> 2018
+						</div>
+					</div>
+
+					<div class="modal-work__client">
+						<div class="modal-work__client-title">Client:</div>
+						<div class="modal-work__client-company">Creative Agency</div>
+					</div>
+
+					<div class="modal-work__text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae
+							debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio
+							accusantium? Sunt sed praesentium est minima.</p>
+
+					</div>
+
+					<div class="modal-work__footer">
+						<button class="modal-work__btn slickPrev" type="button">
+							<img src="images/back.svg" height="11" alt="">
+							Previous
+						</button>
+						<button class="modal-work__btn slickNext" type="button">
+							Next
+							<img src="images/next.svg" height="11" alt="">
+						</button>
+					</div>
+
+				</div><!-- /.modal-work__content -->
+			</div>
+			<!--/.modal-work -->
+
+		</div><!-- /.modal__dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal" id="modal_project_6" >
+		<div class="modal__dialog">
+
+			<button class="modal__close" type="button" data-close>
+				<a href=""><i class="fas fa-times"></i></a>
+			</button>
+
+			<div class="modal-work">
+				<div class="modal-work__preview">
+					<div data-slider="slick">
+						<div>
+							<img class="modal-work__photo" src="http://placehold.it/790x780" alt="">
+						</div>
+						<div>
+							<img class="modal-work__photo" src="http://placehold.it/790x780/333" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="modal-work__content">
+
+					<div class="modal-work__header">
+						<h3 class="modal-work__title">Food</h3>
+						<div class="modal-work__info">
+							category <span class="modal-work__info-divider">|</span> 2018
+						</div>
+					</div>
+
+					<div class="modal-work__client">
+						<div class="modal-work__client-title">Client:</div>
+						<div class="modal-work__client-company">Creative Agency</div>
+					</div>
+
+					<div class="modal-work__text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae
+							debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio
+							accusantium? Sunt sed praesentium est minima.</p>
+
+					</div>
+
+					<div class="modal-work__footer">
+						<button class="modal-work__btn slickPrev" type="button">
+							<img src="images/back.svg" height="11" alt="">
+							Previous
+						</button>
+						<button class="modal-work__btn slickNext" type="button">
+							Next
+							<img src="images/next.svg" height="11" alt="">
+						</button>
+					</div>
+
+				</div><!-- /.modal-work__content -->
+			</div>
+			<!--/.modal-work -->
+
+		</div><!-- /.modal__dialog -->
+	</div><!-- /.modal -->
+
+
+
+
 
 	<div class="modal" id="modal_resume" >
 		<div class="modal__dialog">
@@ -726,6 +972,7 @@
 
 	<!-- JS -->
 
+	<script src="js/slick.min.js"></script>
 	<script src="js/app.js"></script>
 
 
