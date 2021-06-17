@@ -2,6 +2,10 @@
 
 .about{
     margin: 8.4rem 0;
+
+    @media @tablet{
+        margin: 4rem 0;
+    }
 }
 
 .about__inner{
@@ -17,6 +21,12 @@
     @media @tablet{
         width: 100%;
     }
+
+    @media @mobile-sm{
+        width: 160%;
+        margin-top: 1rem;
+    }
+
 }
 
 .about__content{
@@ -25,6 +35,10 @@
 
     @media @tablet{
         order: 1;
+        margin-bottom: 2rem;
+        padding-left: 0;
+
+        text-align: center;
     }
 }
 
@@ -36,6 +50,10 @@
 
     @media @notebook{
         font-size: 2.5rem;
+    }
+
+    @media @mobile-sm{
+        font-size: 2rem;
     }
 }
 
@@ -50,6 +68,10 @@
 
     @media @notebook{
         font-size: 4rem;
+    }
+
+    @media @mobile-sm{
+        font-size: 3rem;
     }
 }
 
@@ -67,6 +89,7 @@
         position: relative;
         bottom: 0;
         z-index: 2;
+
     }
 
 
@@ -84,7 +107,7 @@
     }
 
     @media @tablet{
-        order: 2 ;
+        order: 2;
 
         &:before{
             width: 100%;
@@ -96,6 +119,16 @@
 
         img{
             position: relative;
+            margin: 0 auto;
         }
+    }
+
+    @media @mobile-sm{
+        margin-bottom: 0;
+
+        &:before{
+            margin-bottom: 0;
+        }
+
     }
 }

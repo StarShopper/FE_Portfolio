@@ -32,17 +32,17 @@
 					</div>
 				</div>
 
-				<nav class="nav">
-					<a class="nav__link" href="#">Work</a>
+				<nav class="nav" id="nav">
+					<a class="nav__link" href="#" onclick="slowScroll('.works')">Work</a>
 					<a class="nav__link" href="#">About me</a>
 					<a class="nav__link" href="#">Blog</a>
 					<a class="nav__link" href="#">Contact</a>
 					<a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">Hire me</a>
 				</nav>
 
-				<div class="burger">
-					<img class="burger__icon" src="images/menu.svg" alt="">
-				</div>
+				<button class="burger">
+					<img class="burger__icon" src="images/menu.svg" alt="" id="navToggle">
+				</button>
 
 			</div>
 		</div>
@@ -59,22 +59,22 @@
 					<div class="intro__text">Ui/UX &amp; Designer</div>
 
 					<div class="social">
-						<a class="social__link" href="#">
+						<a class="social__link" href="https://www.behance.net/" target="_blank">
 							<i class="fab fa-behance"></i>
 						</a>
-						<a class="social__link" href="#">
+						<a class="social__link" href="https://dribbble.com/" target="_blank">
 							<i class="fab fa-dribbble"></i>
 						</a>
-						<a class="social__link" href="#">
+						<a class="social__link" href="https://www.linkedin.com/" target="_blank">
 							<i class="fab fa-facebook"></i>
 						</a>
-						<a class="social__link" href="#">
+						<a class="social__link" href="https://ru-ru.facebook.com/" target="_blank">
 							<i class="fab fa-linkedin"></i>
 						</a>
-						<a class="social__link" href="#">
+						<a class="social__link" href="https://www.instagram.com/" target="_blank">
 							<i class="fab fa-instagram"></i>
 						</a>
-						<a class="social__link" href="#">
+						<a class="social__link" href="https://twitter.com/" target="_blank">
 							<i class="fab fa-twitter"></i>
 						</a>
 					</div>
@@ -92,7 +92,7 @@
 
 	<!--  Works  -->
 
-	<div class="works">
+	<div class="works" id="works">
 		<div class="container">
 
 			<div class="works__nav">
@@ -355,22 +355,22 @@
 					</div>
 
 					<div class="footer__social">
-						<a href="#" target="_blank">
+						<a href="https://www.behance.net/" target="_blank">
 							<img src="images/behance-gray.svg" width="24" alt="">
 						</a>
-						<a href="#" target="_blank">
+						<a href="https://dribbble.com/" target="_blank">
 							<img src="images/dribbble-gray.svg" width="18" alt="">
 						</a>
-						<a href="#" target="_blank">
+						<a href="https://www.linkedin.com/" target="_blank">
 							<img src="images/linkedin-gray.svg" width="18" alt="">
 						</a>
-						<a href="#" target="_blank">
+						<a href="https://ru-ru.facebook.com/" target="_blank">
 							<img src="images/fb-gray.svg" height="18" alt="">
 						</a>
-						<a href="#" target="_blank">
+						<a href="https://www.instagram.com/" target="_blank">
 							<img src="images/instagram-gray.svg" width="18" alt="">
 						</a>
-						<a href="#" target="_blank">
+						<a href="https://twitter.com/" target="_blank">
 							<img src="images/twitter-gray.svg" width="20" alt="">
 						</a>
 					</div>
@@ -750,8 +750,9 @@
 				<h3 class="modal__title">Resume</h3>
 
 				<div class="text-center">
-					<a class="btn btn--thin" href="#">Download PDF</a>
-					<a class="btn btn--thin" href="#">Print</a>
+					<a class="btn btn--thin" href="#" download="/fe_portfolio/ images/resume_ph.png">Download PDF</a>
+					<a class="btn btn--thin" href="javascript:(print());">Print</a>
+
 				</div>
 
 				<div class="timeline">
@@ -980,8 +981,7 @@
 
 	<script src="js/slick.min.js"></script>
 	<script src="js/app.js"></script>
-
-
+	<script src="js/slowScroll.js" type="text/javascript"></script>
 
 </body>
 
