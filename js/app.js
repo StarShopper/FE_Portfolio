@@ -1,8 +1,12 @@
 $(function () {
 
+    //initialising a slick slider
+
     const worksSlider = $('[data-slider="slick"]');
 
     /* Filter */
+    //function that filter a content in the .works block
+
     let filter = $('[data-filter]')
 
     filter.on('click', function (event) {
@@ -29,8 +33,12 @@ $(function () {
 
     /* Modal*/
 
+    //function that open and close the modal window
+
     const modalCall = $("[data-modal]");
     const modalClose = $("[data-close]")
+
+    //function that open the modal window
 
     modalCall.on("click", function (event) {
 
@@ -52,6 +60,7 @@ $(function () {
         worksSlider.slick('setPosition');
     });
 
+    //function that closes the modal window
 
     modalClose.on("click", function (event) {
         event.preventDefault()
@@ -81,8 +90,6 @@ $(function () {
             $this.removeClass('show')
             $('body').removeClass('no-scroll')
         }, 200);
-
-
 
     });
 
@@ -134,4 +141,12 @@ $(function () {
 
     })
 
+
+    // const preventArt = $('.articles__photo')
+
+    //function that prevents redirecting page focus to header
+
+    $('.articles__col').on('click', function(event){
+        event.preventDefault()
+    })
 });

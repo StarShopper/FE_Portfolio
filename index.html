@@ -17,7 +17,7 @@
 </head>
 
 <body>
-	<!-- Header -->
+								<!-- Header -->
 
 	<header class="header">
 		<div class="container">
@@ -34,9 +34,10 @@
 
 				<nav class="nav" id="nav">
 					<a class="nav__link" href="#" onclick="slowScroll('.works')">Work</a>
-					<a class="nav__link" href="#">About me</a>
-					<a class="nav__link" href="#">Blog</a>
-					<a class="nav__link" href="#">Contact</a>
+					<a class="nav__link" href="#" onclick="slowScroll('.about')">About me</a>
+					<a class="nav__link" href="#" onclick="slowScroll('.reviews')">Blog</a>
+					<a class="nav__link" href="#" onclick="slowScroll('.news')">News</a>
+					<a class="nav__link" href="#" onclick="slowScroll('.footer')">Contact</a>
 					<a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">Hire me</a>
 				</nav>
 
@@ -46,9 +47,9 @@
 
 			</div>
 		</div>
-	</header>
+	</header> <!-- Header End -->
 
-	<!--INTRO-->
+								<!--INTRO-->
 
 	<section class="intro">
 		<div class="container">
@@ -88,9 +89,9 @@
 
 		</div> <!-- Container  -->
 
-	</section>
+	</section> <!-- INTRO END -->
 
-	<!--  Works  -->
+								<!--  Works  -->
 
 	<div class="works" id="works">
 		<div class="container">
@@ -102,7 +103,7 @@
 				<a class="works__nav-link" href="#" data-filter="interaction">Interaction</a>
 			</div>
 
-			<div class="portfolio" id=>
+			<div class="portfolio">
 				<div class="portfolio__col" data-cat="app">
 					<div class="work" data-modal="#modal_project_1">
 						<img class="work__image" src="http://placehold.it/370X250" alt="">
@@ -143,7 +144,7 @@
 				</div>
 
 				<div class="portfolio__col" data-cat="websites">
-					<div class="work"data-modal="#modal_project_4">
+					<div class="work" data-modal="#modal_project_4">
 						<img class="work__image" src="http://placehold.it/370X250" alt="">
 						<div class="work__content">
 							<div class="work__cat">category: websites</div>
@@ -180,15 +181,15 @@
 						</div>
 					</div>
 				</div>
-			</div><!-- PORTFOLIO -->
+			</div> <!-- PORTFOLIO -->
 
 			<div class="text-center">
 				<a class="btn  btn--sm" href="#">LOAD MORE WORK</a>
 			</div>
-		</div><!-- Container  -->
-	</div> <!-- works -->
+		</div> <!-- Container  -->
+	</div> <!-- WORKS END -->
 
-	<!--ABOUT-->
+								<!--ABOUT-->
 
 	<section class="about">
 		<div class="container">
@@ -222,10 +223,10 @@
 					<button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
 				</div>
 			</div>
-		</div>
-		<!--container-->
-	</section>
-	<!--about-->
+		</div> <!--container-->
+	</section> <!-- ABOUT END-->
+
+								<!-- REVIEWS -->
 
 	<div class="reviews">
 		<div class="container">
@@ -252,12 +253,10 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<!--container-->
-	</div>
-	<!--reviews-->
+		</div> <!--container-->
+	</div> <!-- REVIEWS END-->
 
-	<!--NEWS-->
+								<!--NEWS-->
 
 	<section class="news">
 		<div class="container">
@@ -339,11 +338,10 @@
 			<div class="news__footer">
 				<a class="news__link" href="">See more posts</a>
 			</div>
-		</div>
-		<!--Container-->
-	</section>
+		</div> <!--Container-->
+	</section> <!-- REVIEWS END-->
 
-	<!--Footer-->
+								<!--Footer-->
 
 	<footer class="footer">
 		<div class="container">
@@ -374,8 +372,7 @@
 							<img src="images/twitter-gray.svg" width="20" alt="">
 						</a>
 					</div>
-				</div>
-				<!--Footer__credits -->
+				</div> <!--Footer__credits ES=ND -->
 
 				<nav class="footer__nav">
 					<a class="footer__nav-link" href="#">Work</a>
@@ -384,16 +381,14 @@
 					<a class="footer__nav-link" href="#">Contact</a>
 					<a class="footer__nav-link  footer__nav-link--btn" href="#" data-modal="#modal_hire_me">Hire me</a>
 				</nav>
-			</div>
-			<!--Footer__inner -->
+			</div> <!--Footer__inner END -->
 
-		</div>
-		<!--Container -->
-	</footer>
+		</div><!--Container -->
+	</footer> <!-- FOOTER END-->
 
-							<!--Modals-->
+								<!--Modals-->
 
-	<div class="modal" id="modal_project_1" >
+	<div class="modal" id="modal_project_1">
 		<div class="modal__dialog">
 
 			<button class="modal__close" type="button" data-close>
@@ -443,14 +438,13 @@
 						</button>
 					</div>
 
-				</div><!-- /.modal-work__content -->
-			</div>
-			<!--/.modal-work -->
+				</div><!-- MODAL-WORK__CONTENT END -->
+			</div> <!-- MODAL-WORK END-->
 
-		</div><!-- /.modal__dialog -->
-	</div><!-- /.modal -->
+		</div><!-- MODAL__DIALOG END-->
+	</div><!-- MODAL END-->
 
-	<div class="modal" id="modal_project_2" >
+	<div class="modal" id="modal_project_2">
 		<div class="modal__dialog">
 
 			<button class="modal__close" type="button" data-close>
@@ -500,14 +494,13 @@
 						</button>
 					</div>
 
-				</div><!-- /.modal-work__content -->
-			</div>
-			<!--/.modal-work -->
+				</div><!-- MODAL-WORK__CONTENT END -->
+			</div> <!-- MODAL-WORK END-->
 
-		</div><!-- /.modal__dialog -->
-	</div><!-- /.modal -->
+		</div><!-- MODAL__DIALOG END-->
+	</div><!-- MODAL END-->
 
-	<div class="modal" id="modal_project_3" >
+	<div class="modal" id="modal_project_3">
 		<div class="modal__dialog">
 
 			<button class="modal__close" type="button" data-close>
@@ -557,14 +550,13 @@
 						</button>
 					</div>
 
-				</div><!-- /.modal-work__content -->
-			</div>
-			<!--/.modal-work -->
+				</div><!-- MODAL-WORK__CONTENT END -->
+			</div> <!-- MODAL-WORK END-->
 
-		</div><!-- /.modal__dialog -->
-	</div><!-- /.modal -->
+		</div><!-- MODAL__DIALOG END-->
+	</div><!-- MODAL END-->
 
-	<div class="modal" id="modal_project_4" >
+	<div class="modal" id="modal_project_4">
 		<div class="modal__dialog">
 
 			<button class="modal__close" type="button" data-close>
@@ -614,14 +606,13 @@
 						</button>
 					</div>
 
-				</div><!-- /.modal-work__content -->
-			</div>
-			<!--/.modal-work -->
+				</div><!-- MODAL-WORK__CONTENT END -->
+			</div> <!-- MODAL-WORK END-->
 
-		</div><!-- /.modal__dialog -->
-	</div><!-- /.modal -->
+		</div><!-- MODAL__DIALOG END-->
+	</div><!-- MODAL END-->
 
-	<div class="modal" id="modal_project_5" >
+	<div class="modal" id="modal_project_5">
 		<div class="modal__dialog">
 
 			<button class="modal__close" type="button" data-close>
@@ -671,14 +662,13 @@
 						</button>
 					</div>
 
-				</div><!-- /.modal-work__content -->
-			</div>
-			<!--/.modal-work -->
+				</div><!-- MODAL-WORK__CONTENT END -->
+			</div> <!-- MODAL-WORK END-->
 
-		</div><!-- /.modal__dialog -->
-	</div><!-- /.modal -->
+		</div><!-- MODAL__DIALOG END-->
+	</div><!-- MODAL END-->
 
-	<div class="modal" id="modal_project_6" >
+	<div class="modal" id="modal_project_6">
 		<div class="modal__dialog">
 
 			<button class="modal__close" type="button" data-close>
@@ -728,18 +718,15 @@
 						</button>
 					</div>
 
-				</div><!-- /.modal-work__content -->
-			</div>
-			<!--/.modal-work -->
+				</div><!-- MODAL-WORK__CONTENT END -->
+			</div> <!-- MODAL-WORK END-->
 
-		</div><!-- /.modal__dialog -->
-	</div><!-- /.modal -->
+		</div><!-- MODAL__DIALOG END-->
+	</div><!-- MODAL END-->
 
+								<!-- MODAL-RESUME-->
 
-
-
-
-	<div class="modal" id="modal_resume" >
+	<div class="modal" id="modal_resume">
 		<div class="modal__dialog">
 
 			<button class="modal__close" type="button" data-close>
@@ -874,8 +861,7 @@
 								</div>
 							</div>
 
-						</div>
-						<!--PROGRES-BAR END-->
+						</div> <!--PROGRES-BAR END-->
 
 						<h4 class="timeline__title">Awards</h4>
 
@@ -905,24 +891,22 @@
 							</p>
 						</div>
 
-					</div>
-					<!--TIMELINE __COL END-->
-				</div>
-				<!--TIMELINE END-->
+					</div> <!--TIMELINE__COL END-->
+				</div> <!--TIMELINE END-->
 
 				<div class="text-center">
 					<a class="btn" href="#" data-modal="#modal_hire_me">Hire Me</a>
 				</div>
 
-			</div>
-			<!--MODAL__CONTENT END-->
+			</div> <!--MODAL__CONTENT END-->
 
-		</div>
-		<!--MODAL__DIALOG END-->
-	</div>
-	<!--MODAL-->
+		</div> <!--MODAL__DIALOG END-->
 
-	<div class="modal" id="modal_hire_me" >
+	</div> <!--MODAL-RESUME END-->
+
+								<!--MODAL-HIRING-->
+
+	<div class="modal" id="modal_hire_me">
 		<div class="modal__dialog modal__dialog--sm">
 
 			<button class="modal__close" type="button" data-close>
@@ -963,21 +947,18 @@
 
 					</form>
 
-				</div><!-- CONTACT__LEFT END-->
-			</div>
-			<!--CONTACT END-->
+				</div> <!-- CONTACT__LEFT END-->
+			</div> <!--CONTACT END-->
 
-		</div>
-		<!--MODAL__DIALOG END-->
-	</div>
-	<!--MODAL-->
+		</div> <!--MODAL__DIALOG END-->
+	</div> <!--MODAL-HIRING END-->
 
-							<!--Modals_End-->
+								<!--Modals_End-->
 
 
 
 
-	<!-- JS -->
+								<!-- JS -->
 
 	<script src="js/slick.min.js"></script>
 	<script src="js/app.js"></script>
